@@ -1,7 +1,7 @@
 // 此例列举了各种修饰符
 class Dog {
-    // 此处的 private,表明类不能被实例化, 也不能被继承,; 此处的 protected, 表面类只能继承, 不能被实例化
-    // public 表面为实例属性, 就不需要手动赋值了
+    // 此处的 private, 表明类不能被实例化, 也不能被继承; 此处的 protected, 表面类只能继承, 不能被实例化
+    // public 表明为实例属性, 就不需要手动赋值了
     /*private | protected*/ constructor(name: string, public age: number) {
         this.name = name
     }

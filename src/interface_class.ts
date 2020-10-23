@@ -7,9 +7,9 @@
 
 // 接口不能约束类的 私有成员 以及 构造函数
 interface Human {
-    // constructor(): void; ❌ 接口只能不能约束类的 构造函数
+    // constructor(): void; ❌ 接口不能约束类的 构造函数
     name: string;
-    // age: number; ❌ 接口只能不能约束类的 私有成员
+    // age: number; ❌ 接口不能约束类的 私有成员
     eat(): void;
 }
 

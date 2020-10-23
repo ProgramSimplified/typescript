@@ -46,7 +46,7 @@ interface Names {
 }
 let string: Names = { 3: 'sss' } // 3 自动转为 string
 
-// ‼️ 索引签名, 键(索引)的类型只有 string 和 number, 若同时存在: number 类型键的值必须为 string 类型键的子集或相同
+//❗️索引签名, 键(索引)的类型只有 string 和 number, 若同时存在: number 类型键的值必须为 string 类型键的子集或相同
 interface NamesHybrid {
     // [x: string]: Object;
     // [y: number]: Date;

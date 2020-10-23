@@ -39,18 +39,24 @@ render({
 interface StingArray {
     [idx: number]: string
 }
+let charts: StingArray = ['A', 'B']
 
 interface Names {
     [x: string]: string
 }
-
-interface NamesHybrid {
-    [x: string]: string;
-    // [y: number]: string; // 因为 number 默认会转换为 string, 所以这句并没什么用, 以第一次出现 索引签名 为主
-}
-
-let charts: StingArray = ['A', 'B']
 let string: Names = { 3: 'sss' } // 3 自动转为 string
+
+// ‼️ 索引签名, 键(索引)的类型只有 string 和 number, 若同时存在: number 类型键的值必须为 string 类型键的子集或相同
+interface NamesHybrid {
+    // [x: string]: Object;
+    // [y: number]: Date;
+    [x: string]: string;
+    [x: number]: string;
+    // [y: number]: number; ❌
+}
+let hybrid: NamesHybrid = {}
+hybrid[1] = 'string'  // 因为像 1 这种索引, 既可是数字也可是字符串, 所以它的值类型必须兼容
+
 
 /* =============================== */
 // 接口函数

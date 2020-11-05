@@ -22,7 +22,7 @@ type T2 = TypeName<string[]> // T2: object
  * ❗️联合类型 extends 一个类型, 那么会拆解解析该联合类型.
  */
 // (A | B) extends U ? x : y
-//=> (A extends U > x : y) | (B extends U > x : y)
+//=> (A extends U ? x : y) | (B extends U ? x : y)
 type T3 = TypeName<string | string[]>
 //=> T3: string | object
 

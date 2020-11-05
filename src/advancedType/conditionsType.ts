@@ -37,7 +37,7 @@ type T4 = Diff<"a" | "b" | "c", "a" | "e">
 
 /* 官方已实现, 名为 NonNullable<T> */
 type NotNull<T> = Diff<T, undefined | null>
-type T5 = NotNull<string | number | undefined | null>
+type T5 = NotNull<string | number | undefined | null> // T5: string | number
 
 /* 其他官方类型 举例 */
 // Extract<T, U> 从 T 中抽取出可以赋值给 U 的类型, 与 Exclude 相反

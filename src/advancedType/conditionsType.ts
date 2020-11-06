@@ -22,7 +22,7 @@ type T2 = TypeName<string[]> // T2: object
  * ❗️联合类型 extends 一个类型, 那么会拆解解析该联合类型.
  */
 // (A | B) extends U ? x : y
-//=> (A extends U > x : y) | (B extends U > x : y)
+//=> (A extends U ? x : y) | (B extends U ? x : y)
 type T3 = TypeName<string | string[]>
 //=> T3: string | object
 
@@ -37,7 +37,7 @@ type T4 = Diff<"a" | "b" | "c", "a" | "e">
 
 /* 官方已实现, 名为 NonNullable<T> */
 type NotNull<T> = Diff<T, undefined | null>
-type T5 = NotNull<string | number | undefined | null>
+type T5 = NotNull<string | number | undefined | null> // T5: string | number
 
 /* 其他官方类型 举例 */
 // Extract<T, U> 从 T 中抽取出可以赋值给 U 的类型, 与 Exclude 相反

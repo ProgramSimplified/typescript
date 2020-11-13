@@ -1,0 +1,9 @@
+{
+  "files": [  /* 需要编译的单个文件的列表 */
+    "src/project/tsconfig/a.ts"
+  ],
+  "include": [ /* 需要编译的文件或目录, 支持通配符 */
+    "src/project/tsconfig"
+  ],
+  "exclude": [] /* 需要排除的文件或文件夹, 默认 node_modules 和所有声明文件*/
+}

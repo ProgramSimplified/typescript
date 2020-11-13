@@ -5,3 +5,14 @@
 
 ## typescript-基础篇
 ![img](http://img.imyangyong.com/blog/typescript-%E5%9F%BA%E7%A1%80%E7%AF%87.jpg)
+
+## typescript 模块解析策略
+
+- classic: 前端常用的 AMD | System | ES2015
+
+![img](http://img.imyangyong.com/blog/2020-11-13%2021-10-40.png)
+
+- node
+
+![img](http://img.imyangyong.com/blog/2020-11-13%2021-13-51.png)
+

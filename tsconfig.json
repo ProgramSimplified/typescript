@@ -19,7 +19,7 @@
     // "rootDir": "./",                       /* 指定输入文件目录 (用于输出, 控制输出目录结构) */
 
     // "removeComments": true,                /* 删除注释 */
-    // "noEmit": true,                        /* 不输出文件 (相当于无操作) */
+    // "noEmit": true,                        /* 不输出文件, 只会做类型检查 */
     // "noEmitOnError": true,                 /* 发生错误时不输出文件 */
     // "noEmitHelpers": true,                 /* 不生成 helper 函数, 需额外安装 ts-helpers (垫片一样)*/
     // "importHelpers": true,                 /* 通过 tslib 引入 helper 函数, 文件必须是模块 (tslib 是 ts 内置的 helper 库, 这就不需要我们额外安装 ts-helper 了)*/

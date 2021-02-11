@@ -17,7 +17,9 @@ function log<T>(value: T): T {
 
 log<string[]>(['sth'])
 log(['sth']) // 也可自动推断
-// 类型推论：若直接实参无法确定类型，则向实参内部查找推断。实践参考：https://typescript-exercises.github.io/#exercise=10&file=%2Findex.ts
+// 类型推论：若直接实参无法确定类型，则向实参内部查找推断。
+// 实践参考：https://typescript-exercises.github.io/#exercise=10&file=%2Findex.ts
+// 文档说明：https://www.tslang.cn/docs/handbook/type-inference.html
 
 // 泛型定义类型
 type Log = <T>(value: T) => T

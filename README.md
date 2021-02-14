@@ -28,4 +28,3 @@ Babel 7 之后, Babel 与 TypeScript 官方合作, Babel 编译 ts , tsc 来作�
 ![img](http://img.imyangyong.com/blog/2020-11-14%2002-23-25.png)
 
 > 开发ts，Babel不是必选项。使用Babel有两个原因，一个是大部分已存系统依赖了Babel，另一个是Babel有非常丰富的插件，它的生态发展得很好
-

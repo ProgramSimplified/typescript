@@ -19,7 +19,7 @@ class Asian implements Human {
         this.name = name
     }
     name: string
-    private age: number
+    private age: number // 私有成员也可以使用 # 关键字
     eat() {}
 }
 
